@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Família Querida</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<canvas class="bg-canvas" id="bg-canvas" aria-hidden="true"></canvas>
+	<main class="layout">
+		<section class="hero">
+			<div class="hero__content">
+				<p class="eyebrow">Presente feito com amor e low budget :P 💥</p>
+				<h1>Conheçam a minha familia <3</h1>
+			</div>
+		</section>
+		<section class="stage" aria-label="Vídeos da família">
+			<button class="stage__control is-left" id="stage-prev" aria-label="Anterior">‹</button>
+			<div class="stage__content">
+				<div class="stage__text">
+					<p class="stage__eyebrow" id="stage-role"></p>
+					<h2 id="stage-title"></h2>
+				</div>
+				<div class="stage__video-wrap">
+					<video id="stage-video" controls playsinline autoplay loop></video>
+				</div>
+			</div>
+			<button class="stage__control is-right" id="stage-next" aria-label="Seguinte">›</button>
+		</section>
+	</main>
+	<script src="script.js" defer></script>
+</body>
+</html>
